@@ -72,7 +72,9 @@ function removeFromCart(item) {
   return "That item is not in your cart."
 } 
 
-/* don't need an else if after the if. that means it will iterate through, return "That item is not in your cart" and stop after */
+/* don't need an else if after the if. that means it will iterate through, return "That item is not in your cart" and stop afterwards. It will never reach the 2nd iteration.
+  Here for if: if it runs through the loop and doesn't find the item you're looking for, what does that mean? It means the item isn't in the cart. Therefore, then return "That item..."
+*/
 
 function placeOrder(cardNumber) {
   if (cardNumber === undefined) {
